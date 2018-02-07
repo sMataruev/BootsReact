@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "public": true,
-  "homepage": "https://smataruev.github.io/NewReact/",
+//  "homepage": "https://smataruev.github.io/NewReact/",
   "scripts": {
     "start": "webpack-dev-server  --progress --env development",
     "build": "webpack --env production",

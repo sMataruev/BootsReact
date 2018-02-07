@@ -3,12 +3,16 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "public": true,
+  "homepage": "https://smataruev.github.io/BootsReact/",
   "scripts": {
     "start": "webpack-dev-server --hot --progress --env development",
     "build": "webpack --env production",
-    "serv": "static build"
+    "serv": "static build",
+    "deploy":"gh-pages -d build"
   },
   "dependencies": {
+    "gh-pages": "^1.1.0",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",

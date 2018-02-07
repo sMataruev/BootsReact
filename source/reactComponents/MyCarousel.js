@@ -1,9 +1,10 @@
 import React, {Component} from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import {Carousel} from 'react-responsive-carousel';
-import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import Horax from "./Horax";
+import 'react-responsive-carousel/lib/styles/carousel.css';
 
+
+import './MyCarousel.scss';
 
 class MyCarousel extends Component {
     static propTypes = {};
@@ -11,7 +12,6 @@ class MyCarousel extends Component {
     render() {
         return (
             <div>
-                <Horax/>
                 <Carousel autoPlay showThumbs={false} dynamicHeight={false} emulateTouch={true} showStatus={false}>
                     <div>
                         <img src="http://orig13.deviantart.net/d3cb/f/2010/010/c/a/empire_by_yuseda.jpg"/>

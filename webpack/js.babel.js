@@ -1,7 +1,3 @@
-const babel = require('babel-core');
-const babelReact = require('babel-preset-react');
-const reactHot = require('react-hot-loader');
-
 module.exports = function () {
     return {
         module: {
@@ -19,3 +15,4 @@ module.exports = function () {
         }
     }
 };
+//,'react-hmre'

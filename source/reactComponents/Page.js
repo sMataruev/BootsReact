@@ -1,23 +1,26 @@
 import React, {Component} from 'react';
 // import PropTypes from 'prop-types';
 import {Nav, NavLink, NavItem} from 'reactstrap';
-import {Container, Col,Row,Button} from 'muicss/react';
+import {Container, Col, Row, Button} from 'muicss/react';
 import 'muicss/dist/css/mui.min.css';
-import  './Phone.scss';
+import './Phone.scss';
+import $ from 'jquery';
 
 
 import 'normalize.css'
 import MyCarousel from './MyCarousel';
 import 'bootstrap/dist/css/bootstrap.css';
-import Footer from "./Footer";
-class Page extends Component {
-    static propTypes = {
+import 'animate.css';
 
-    };
+import Footer from "./Footer";
+
+class Page extends Component {
+    static propTypes = {};
+
     render() {
         return (
             <Container fluid={true}>
-                <Row >
+                <Row>
                     <Col>
                         <MyCarousel/>
                     </Col>
@@ -39,11 +42,12 @@ class Page extends Component {
                                 <Button variant="flat" color="primary" size={'large'}>Iphone</Button>
                             </NavLink>
                         </NavItem>
+
                     </Nav>
                 </Row>
                 <Row>
-                    <Col lg={4} md={4} className={'phone-img'} > dfdf</Col>
-                    <Col lg={8} md={8} className={'phone-desc'} >fdf</Col>
+                    <Col lg={4} md={4} className={'phone-img'}> phone</Col>
+                    <Col lg={8} md={8} className={'phone-desc'}>description</Col>
                 </Row>
                 <Row>
                     <Col>
@@ -53,6 +57,11 @@ class Page extends Component {
             </Container>
         );
     }
+
+    // componentDidMount =()=> {
+    //     $('#myBtn').on('click', function () {
+    //     })
+    // }
 }
 
 export default Page;

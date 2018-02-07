@@ -4,9 +4,9 @@
   "main": "index.js",
   "license": "MIT",
   "public": true,
-  "homepage": "https://smataruev.github.io/BootsReact/",
+  "homepage": "https://smataruev.github.io/NewReact/",
   "scripts": {
-    "start": "webpack-dev-server --hot --progress --env development",
+    "start": "webpack-dev-server  --progress --env development",
     "build": "webpack --env production",
     "serv": "static build",
     "deploy": "gh-pages -d build"

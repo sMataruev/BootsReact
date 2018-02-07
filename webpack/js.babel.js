@@ -7,7 +7,7 @@ module.exports = function () {
                     loader:  'babel-loader',
                     exclude: /node_modules/,
                     options: {
-                        presets: ["es2015", 'react', 'stage-0','react-hmre']
+                        presets: ["es2015", 'react', 'stage-0' ]
                     },
                 },
             ]

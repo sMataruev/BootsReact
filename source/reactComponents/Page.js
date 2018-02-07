@@ -42,7 +42,11 @@ class Page extends Component {
                                 <Button variant="flat" color="primary" size={'large'}>Iphone</Button>
                             </NavLink>
                         </NavItem>
-
+                        <NavItem>
+                            <NavLink href="#">
+                                <Button variant="flat" color="primary" size={'large'} id={'myBTN'} className={'animated infinite bounce'}>НАЖМИ МНЯ</Button>
+                            </NavLink>
+                        </NavItem>
                     </Nav>
                 </Row>
                 <Row>
@@ -58,10 +62,14 @@ class Page extends Component {
         );
     }
 
-    // componentDidMount =()=> {
-    //     $('#myBtn').on('click', function () {
-    //     })
-    // }
+    componentDidMount=()=>{
+        this.myFUN();
+    }
+    myFUN=()=>{
+        $('#myBTN').on('click', function () {
+            alert('Hello')
+        })
+    }
 }
 
 export default Page;

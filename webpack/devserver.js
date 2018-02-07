@@ -4,7 +4,7 @@ module.exports = function () {
             stats: 'errors-only',
             port: 11000,
             inline: true,
-            hot: true,
+            // hot: true,
            // historyApiFallback: true,
         }
     }
